@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MainMenu.unity
     guid: 1dfe446773fcd9244b9cd719f60b6b3d
+  - enabled: 1
+    path: Assets/Respawn.unity
+    guid: 8cb840e61f5e90046a23a8c3750f09ea
+  - enabled: 1
+    path: Assets/Level 02.unity
+    guid: bb1e7fe88eaa1954bb9ee158576c1354
+  - enabled: 1
+    path: Assets/WinGame.unity
+    guid: f6b1560255c171f40a76ec9247b2f235
   m_configObjects: {}

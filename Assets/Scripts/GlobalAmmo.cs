@@ -13,18 +13,15 @@ public class GlobalAmmo : MonoBehaviour
     public static int LoadedAmmo;
     public int InternalLoaded;
     public GameObject LoadedDisplay;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+   
     // Update is called once per frame
     void Update()
     {
         InternalAmmo = CurrentAmmo;
         InternalLoaded = LoadedAmmo;
+        PlayerPrefs.SetInt("AmmoLevel", CurrentAmmo);
         AmmoDisplay.GetComponent<Text>().text = "" + InternalAmmo;
         LoadedDisplay.GetComponent<Text>().text = "" + LoadedAmmo;
+        
     }
 }

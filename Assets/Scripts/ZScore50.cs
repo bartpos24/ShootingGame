@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ZScore50 : MonoBehaviour
 {
-    public GameObject ObjectiveComplete;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +19,6 @@ public class ZScore50 : MonoBehaviour
     void DeductPoints(int DamageAmount)
     {
         GlobalScore.CurrentScore += 50;
-        ObjectiveComplete.SetActive(true);
+       
     }
 }

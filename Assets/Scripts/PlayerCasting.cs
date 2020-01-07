@@ -8,14 +8,6 @@ public class PlayerCasting : MonoBehaviour
     public static float DistanceFromTarget;
     public float ToTarget;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
 
@@ -24,6 +16,7 @@ public class PlayerCasting : MonoBehaviour
         {
             ToTarget = hit.distance;
             DistanceFromTarget = ToTarget;
+            PlayerPrefs.SetFloat("TheCasting", DistanceFromTarget);
         }
     }
 }

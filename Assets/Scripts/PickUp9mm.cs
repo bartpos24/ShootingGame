@@ -14,6 +14,7 @@ public class PickUp9mm : MonoBehaviour
     public GameObject AmmoDisplay;
     public AudioSource PickUpAudio;
     public GameObject ObjectiveComplete;
+    public GameObject DoorStopper;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +51,8 @@ public class PickUp9mm : MonoBehaviour
 
     IEnumerator TakeNineMil()
     {
+        PlayerPrefs.SetInt("TakenAGun",1);
+        DoorStopper.SetActive(false);
         PickUpAudio.Play();
         transform.position = new Vector3(0, -1000, 0);
         FakeGun.SetActive(false);

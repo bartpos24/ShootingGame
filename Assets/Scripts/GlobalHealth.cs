@@ -9,6 +9,7 @@ public class GlobalHealth : MonoBehaviour
     public static int PlayerHealth = 10;
     public int InternalHealth;
     public GameObject HealthDisplay;
+   
 
     void Update()
     {
@@ -18,5 +19,7 @@ public class GlobalHealth : MonoBehaviour
         {
             SceneManager.LoadScene(3);
         }
+
+     
     }
 }

@@ -27,11 +27,11 @@ public class ZombieFollow : MonoBehaviour
             TargetDistance = Shot.distance;
             if(TargetDistance < AllowedRange)
             {
-                EnemySpeed = 0.01f;
+                EnemySpeed = 0.1f;
                 if(AttackTrigger == 0)
                 {
                     TheEnemy.GetComponent<Animation>().Play("Walking");
-                    transform.position = Vector3.MoveTowards(transform.position, ThePlayer.transform.position, EnemySpeed);
+                    transform.position = Vector3.MoveTowards(transform.position, ThePlayer.transform.position, Time.deltaTime);
 
                 }
             }
